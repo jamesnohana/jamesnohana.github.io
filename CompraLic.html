@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compra</title>
+</head>
+<body>
+
+  <div class="container, header">
+    <a href="IndexUS.html"><img class="logo" src="images/logo.png"></a> 
+    <div>
+      <a href=""><img class="usuario" src="images/usericon.png"></a>
+    </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light, nav">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="IndexUS.html">INICIO<span class="sr-only"></span></a>
+          </li>
+                <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             PRODUCTOS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="ProgramsUs.html">PROGRAMAS</a>
+              <a class="dropdown-item" href="LicenseUs.html">LICENCIAS</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BlogUs.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html">LOG OUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+        
+    <div class="container, formaComp">
+      <h2 class="titulo">FORMULARIO DE COMPRA</h2>
+      <form class="formulario" action="CompraLic.html" method="post" onsubmit="return validateForm()">
+        <div class="mb-3">
+          <label for="producto" class="form-label">Producto</label>
+          <br>
+          <select name="producto" id="producto" required onchange="updatePrecio()">
+            <option value="" data-precio="0">Seleccionar producto</option>
+            <option value="AVAST PREMIUM - 1 AÑO" data-precio="75.00">AVAST PREMIUM - 1 AÑO</option>
+            <option value="KASPERSKY ANTIVIRUS - 1 AÑO" data-precio="139.90">KAPERSKY ANTIVIRUS - 1 AÑO</option>
+            <option value="KASPERSKY PREMIUM - 1 AÑO" data-precio="170.00">KAPERSKY PREMIUM - 1 AÑO</option>
+            <option value="NOD32 ANTIVIRUS - 1 AÑO" data-precio="165.00">NOD32 ANTIVIRUS - 1 AÑO</option>
+            <option value="PANDA DOME COMPLETE - 1 AÑO" data-precio="168.00">PANDA DOME COMPLETE - 1 AÑO</option>
+            <option value="MCAFEE INTERNET SECURITY - 1 AÑO" data-precio="119.50">MCAFEE INTERNET SECURITY - 1 AÑO</option>
+            <option value="KASPERSKY INTERNET SECURITY - 1 AÑO" data-precio="127.00">KASPERSKY INTERNET SECURITY - 1 AÑO</option>
+            <option value="ESET INTERNET SECURITY - 1 AÑO" data-precio="140.00">ESET INTERNET SECURITY - 1 AÑO</option>
+            <option value="WINDOWS 10 PRO - 1PC" data-precio="65.00">WINDOWS 10 PRO - 1PC</option>
+            <option value="WINDOWS 11 PRO - 1PC" data-precio="95.60">WINDOWS 11 PRO - 1PC</option>
+            <option value="WINDOWS 11 HOME - 1PC" data-precio="80.00">WINDOWS 11 HOME - 1PC</option>
+            <option value="WINDOWS 10 HOME - 1PC" data-precio="35.00">WINDOWS 10 HOME - 1PC</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">PRECIO DEL PRODUCTO</label>
+          <span id="precio-producto">s/. 0</span>
+        </div>
+        <div class="mb-3">
+          <label for="firstname" class="form-label">NOMBRES</label>
+          <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Ingrese sus nombres y apellidos" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">TELÉFONO DE CONTACTO</label>
+          <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Número de teléfono (9 dígitos)" pattern="[0-9]{9}" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">CORREO ELECTRÓNICO</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="metodo_pago" class="form-label">MÉTODO DE PAGO</label>
+          <br>
+          <select name="metodo_pago" id="metodo_pago" required>
+            <option value="">Seleccionar método de pago</option>
+            <option value="VISA">VISA</option>
+            <option value="MASTERCARD">MASTERCARD</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="dni" class="form-label">NÚMERO DE TARJETA</label>
+          <input type="text" class="form-control" name="dni" id="dni" placeholder="Número de tarjeta (11 dígitos)" pattern="[0-9]{11}" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-custom w-100">Enviar</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="container,f1">
+      <div class="footerl">
+      <div class="f1">
+      <h5>Sobre Nosotros</h5>
+      <p>¡Bienvenido a SerialSoft, tu destino confiable para software y licencias digitales! En SerialSoft, nos apasiona proporcionarte acceso fácil y seguro a una amplia gama de software, desde sistemas operativos hasta programas de productividad y herramientas de seguridad informática. Con una sólida reputación por ofrecer productos genuinos y licencias legítimas, nos comprometemos a brindarte una experiencia de compra sin complicaciones y un servicio al cliente excepcional. Descubre el poder del software auténtico con SerialSoft y lleva tu experiencia digital al siguiente nivel.</p>
+      </div>
+      
+      <div class="f1">
+      <h5>Ayuda</h5>
+      <ul>
+      <li><a>Opciones de pago</a></li>
+      <li><a>Devoluciones</a></li>
+      <li><a>Preguntas</a></li>
+      <li><a>Contacto</a></li>
+      <li><a>Copyright</a></li>
+      </ul>
+      </div>
+      
+      <div class="f1">
+      <h5>Información de Contacto</h5>
+      <ul>
+      <li><a>456 Playa El muerto - Isla San Lorenzo</a></li>
+      <li><a>51 9561234567</a></li>
+      <li><a>01 4682344</a></li>
+      <li><a>SerialSoft@gmail.com</a></li>
+      <li><a>Fax - 95644523</a></li>
+      </ul>
+      </div>
+      
+      <div class="f1">
+      <h5>Ubícanos</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15015.912222632045!2d-77.22711217707621!3d-12.087735855129184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1713306509650!5m2!1ses!2spe" width="350" height="280" style="border:0;"></iframe>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+    function updatePrecio() {
+      var productoSelect = document.getElementById('producto');
+      var selectedOption = productoSelect.options[productoSelect.selectedIndex];
+      var precio = selectedOption.getAttribute('data-precio');
+      document.getElementById('precio-producto').textContent = "s/. " + precio;
+    }
+    
+    function validateForm() {
+     
+      var productoSelect = document.getElementById('producto');
+      var producto = productoSelect.options[productoSelect.selectedIndex].text;
+      var precio = document.getElementById('precio-producto').textContent;
+      var nombres = document.getElementById('firstname').value;
+      var telefono = document.getElementById('telefono').value;
+      var email = document.getElementById('email').value;
+      var metodoPago = document.getElementById('metodo_pago').value;
+      var numeroTarjeta = document.getElementById('dni').value;
+    
+      
+      if (producto === "" || nombres === "" || telefono === "" || email === "" || metodoPago === "" || numeroTarjeta === "") {
+        alert("Todos los campos son obligatorios.");
+        return false;
+      }
+    
+      
+      if (telefono.length !== 9) {
+        alert("El teléfono debe tener 9 dígitos.");
+        return false;
+      }
+      if (numeroTarjeta.length !== 11) {
+        alert("El número de tarjeta debe tener 11 dígitos.");
+        return false;
+      }
+    
+      
+      var mensaje = "Información ingresada:\n\n" +
+                    "Producto: " + producto + "\n" +
+                    "Precio: " + precio + "\n" +
+                    "Nombres: " + nombres + "\n" +
+                    "Teléfono: " + telefono + "\n" +
+                    "Correo electrónico: " + email + "\n" +
+                    "Método de pago: " + metodoPago + "\n" +
+                    "Número de tarjeta: " + numeroTarjeta;
+    
+      alert(mensaje);
+    
+    
+      return true;
+    }
+    </script>
+    
+
+</body>
+</html>

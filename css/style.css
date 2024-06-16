@@ -1,0 +1,85 @@
+.header {background-color:#1f86b8; margin:0px 15px; height:150px;}
+
+.logo {width:8%;float:left;}
+.logobox {width:5%;}
+.titulo {color: white; text-align: center;}
+
+.search {width:11%; height:5%;float:left;}
+.bar {background-color:#1f86b8;}
+.bar input {width:200%}
+.bar button {background-color:#155e80; color:white; margin:5px 0px;}
+
+.nav {float:right; text-align:center; margin:30px 0px 50px 70px; width:40%}
+.nav li {background-color:#155e80; margin:0px 5px; width:140px; border-radius:10px;}
+.nav li a {color:white;}
+.nav li div {background-color:#155e80;}
+
+.slide {width:99.3%; border-radius:15px; margin:5px 6px 5px 6px;}
+.slide img {border-radius:15px; height:auto; width:80%; transition:0.5s;}
+.carousel-item {
+    transition: transform 0.1s ease; /* Cambia 1s por la duración que desees en segundos */
+}
+
+.slide img {
+    animation: slide 1s ease-in-out infinite alternate; transition: transform 0.5s ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.ofertas {background-color:#1f86b8; margin:0px 15px; height:200px; border-radius:10px;}
+.ofertas h1 {text-align:center; color:white; margin:50px 0px 0px 0px; font-size:60px; font-size: 3.5vw;}
+
+
+
+.vent {background-color:#1f86b8; height:200px; border-radius:10px; margin:15px 15px 5px 15px;}
+.vent h1{text-align:center; color:white; margin:50px 0px 0px 0px; font-size:60px; font-size: 3.5vw;}
+
+.oferven {margin:0px 15px; display:grid; grid-template-columns: repeat(4, 1fr);}
+.oferven1 {width:100%; font-size:10px; text-align:center; } 
+.oferven1 img {width:70%;}
+
+.oferven2 {margin:0px 15px; display:grid; grid-template-columns: repeat(3, 1fr);}
+
+
+
+
+
+.footer {background-color:#1f86b8; margin:10px 15px 0px 15px; height:400px;}
+.f1 {margin:40px 0px;}
+.footerl {display:grid; grid-template-columns: repeat(4, 1fr); color:white; text-align:center; margin:10px; font-size: 0.8vw}
+.footerl ul li{list-style:none;}
+
+.forma1 {background-color:#1f86b8;margin:15px 15px 10px 15px; height:600px; border-radius:10px;}
+.formaComp {background-color:#1f86b8;margin:15px 15px 10px 15px; height:700px; border-radius:10px;}
+.formulario {margin:0px 20px 15px 20px; color:white;}
+
+
+
+
+
+
+
+
+.headeradmin {background-color:#1f86b8; margin:0px 15px; height:150px;}
+
+.headeradmin logo {width:8%;float:left;}
+.headeradmin logobox {width:5%;}
+
+.headeradmin nav {float:right; text-align:center; margin:30px 0px 50px 70px; width:40%}
+.headeradmin nav li {background-color:#155e80; margin:0px 5px; width:140px; border-radius:10px;}
+.headeradmin nav li a {color:white;}
+.headeradmin nav li div {background-color:#155e80;}
+
+
+.welcome {background-color:#1f86b8; margin:0px 15px; height:900px; border-radius:10px; text-align:center;}
+.welcome h1 {text-align:center; color:white; margin:50px 0px 0px 0px; font-size:60px; font-size: 3.5vw;}
+.bbgr {background-color:#155e80}
+
+.usuario {width: 3%; margin: 50px; float: left;}
